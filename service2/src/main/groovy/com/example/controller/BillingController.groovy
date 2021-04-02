@@ -12,7 +12,7 @@ class BookController {
     Flowable<ArrayList<Book>> findBooks(){
         Book book1 = new Book(title: "Title1", author: "author1", isbn: "xxxxxxx")
         Book book2 = new Book(title: "Title2", author: "author2", isbn: "xxxxxxx")
-        Book book3 = new Book(title: "Title3", author: "author3", isbn: "xxxxxxx")
+        Book book3 = new Book(title: "Title3", author: "author3", isbn: "xxxxxxx")s
         Flowable.just([book1, book2, book3])
     }
 }
