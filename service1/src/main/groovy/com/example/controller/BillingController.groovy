@@ -4,9 +4,11 @@ import com.example.Service2Client
 import com.example.domain.Book
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
+import io.micronaut.retry.annotation.Recoverable
 import io.reactivex.Flowable
 
 @Controller("/api/billing")
+@Recoverable
 class BillingController {
     Service2Client client
 
