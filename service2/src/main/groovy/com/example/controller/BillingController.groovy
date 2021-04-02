@@ -9,11 +9,10 @@ import io.reactivex.Flowable
 class BookController {
 
     @Get
-    Flowable<ArrayList<Book>> index(){
+    Flowable<ArrayList<Book>> findBooks(){
         Book book1 = new Book(title: "Title1", author: "author1", isbn: "xxxxxxx")
         Book book2 = new Book(title: "Title2", author: "author2", isbn: "xxxxxxx")
         Book book3 = new Book(title: "Title3", author: "author3", isbn: "xxxxxxx")
-        print("get!!!")
         Flowable.just([book1, book2, book3])
     }
 }

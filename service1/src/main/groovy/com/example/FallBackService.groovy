@@ -7,8 +7,8 @@ import io.reactivex.Flowable;
 import io.micronaut.retry.annotation.Recoverable;
 
 @Fallback
-//@Recoverable
-class FallBackService implements Service2Client {
+@Recoverable
+class FallBackService implements Service {
     @Override
     Flowable<ArrayList<Book>> findBooks() {
         Book book1 = new Book(title: "success", author: "QJY", isbn: "001")
